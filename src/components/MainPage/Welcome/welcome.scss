@@ -1,0 +1,34 @@
+@use 'src/styles/vars';
+
+/* mobile first */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: calc(vars.$gutter) *2;
+
+  &-title {
+    color: vars.$lightColor;
+    font-size: vars.$titleSize;
+    margin-bottom: calc(vars.$gutter * 0.5);
+  }
+  &-subtitle {
+    margin-bottom: calc(vars.$gutter * 2.5);
+  }
+}
+
+/* for tablet */
+@media (min-width: 576px) {
+
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+
+}
+
+
+/* for screen */
+@media (min-width: 1200px) {
+  
+}

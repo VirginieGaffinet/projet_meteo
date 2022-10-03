@@ -1,0 +1,23 @@
+@use 'src/styles/vars';
+
+/* mobile first */
+.app {
+  width: 100vw;
+  text-align: center;
+  color: vars.$textColor;
+}
+/* for tablet */
+@media (min-width: 576px) {
+
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+
+}
+
+
+/* for screen */
+@media (min-width: 1200px) {
+  
+}
