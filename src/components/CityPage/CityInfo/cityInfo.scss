@@ -1,0 +1,54 @@
+@use 'src/styles/vars';
+
+/* mobile first */
+.cityInfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-logo {
+      margin-top: calc(vars.$gutter * 5);
+      margin-bottom: calc(vars.$gutter * 0.5);
+      width: 200px;
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-top: auto;
+    margin-bottom: 32px;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 32px;
+      align-items: flex-start;
+    }
+    &-degre {
+      font-size: 3em;
+      margin-right: 32px;
+    }
+  }
+}  
+/* for tablet */
+@media (min-width: 576px) {
+
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+
+}
+
+
+/* for screen */
+@media (min-width: 1200px) {
+  
+}

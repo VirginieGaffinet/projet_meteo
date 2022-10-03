@@ -13,7 +13,26 @@
 
 /* for small screen */
 @media (min-width: 768px) {
-
+  .mainPageContainer {
+    width: 500px;
+    height: 700px;
+    overflow: hidden;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 10px;
+  }
+  .mainPageContainer::-webkit-scrollbar {
+    width: 16px;
+    background-color: vars.$opacityColor;
+  }
+  .mainPageContainer::-webkit-scrollbar-track {
+    background-color: vars.$opacityColor;
+    border-radius: 100px;
+  }
+  .mainPageContainer::-webkit-scrollbar-thumb {
+    background-color: vars.$primaryColor;
+    border-radius: 100px;
+  }
 }
 
 

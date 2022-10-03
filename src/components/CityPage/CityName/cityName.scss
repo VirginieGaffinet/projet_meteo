@@ -1,19 +1,15 @@
 @use 'src/styles/vars';
 
 /* mobile first */
-.welcome {
+.cityName {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: calc(vars.$gutter) *2;
-
-  &-title {
-    color: vars.$lightColor;
+  &-name {
     font-size: vars.$titleSize;
-    margin: calc(vars.$gutter * 1) 0 calc(vars.$gutter * 0.5) 0;
-  }
-  &-subtitle {
-    margin-bottom: calc(vars.$gutter * 2.5);
+    color: vars.$lightColor;
+    margin-bottom: calc(vars.$gutter / 2);
   }
 }
 
