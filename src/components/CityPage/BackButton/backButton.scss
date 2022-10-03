@@ -1,0 +1,36 @@
+@use 'src/styles/vars';
+
+/* mobile first */
+.backButton {
+  text-align: left;
+  margin-left: calc(vars.$gutter) *2;
+  &-button {
+    color: vars.$lightColor;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: vars.$nightColor2;
+    margin: 40px 0;
+    cursor: pointer;
+    transition: all 1s;
+  };
+  &-button:hover {
+    transform: scale(1.3);
+  }
+}
+/* for tablet */
+@media (min-width: 576px) {
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+
+}
+
+
+/* for screen */
+@media (min-width: 1200px) {
+  
+}

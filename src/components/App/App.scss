@@ -2,9 +2,12 @@
 
 /* mobile first */
 .app {
-  width: 100vw;
+  // width: 100vw;
   text-align: center;
   color: vars.$textColor;
+  background: url(../../assets/images/night-img.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
 }
 /* for tablet */
 @media (min-width: 576px) {
@@ -13,7 +16,11 @@
 
 /* for small screen */
 @media (min-width: 768px) {
-
+  .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
