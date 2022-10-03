@@ -1,0 +1,24 @@
+@use 'src/styles/vars';
+
+/* mobile first */
+.cityList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* for tablet */
+@media (min-width: 576px) {
+
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+
+}
+
+
+/* for screen */
+@media (min-width: 1200px) {
+  
+}

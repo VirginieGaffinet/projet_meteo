@@ -1,0 +1,62 @@
+@use 'src/styles/vars';
+
+/* mobile first */
+.searchCity {
+  height: 150px;
+  background-color:vars.$opacityColor;
+  &-form {
+    display: flex;
+    width: 90%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+
+    &-field {
+    margin-bottom: calc(vars.$gutter * 1);
+    width: 80%;
+    height:80%;
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid vars.$lightColor;
+    background: transparent;
+    color: vars.$lightColor;
+    }
+
+    &-buttonSubmit {
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background-color: vars.$buttonColor;
+      margin-bottom: calc(vars.$gutter) *2;
+      transition: all 1s;
+      cursor: pointer;
+    }
+
+    &-buttonSubmit:hover {
+      transform: scale(1.3);
+    }
+  }
+}
+
+/* for tablet */
+@media (min-width: 576px) {
+
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+  .searchCity {
+    &-form {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+
+/* for screen */
+@media (min-width: 1200px) {
+  
+}

@@ -1,0 +1,49 @@
+@use 'src/styles/vars';
+
+/* mobile first */
+.cityCard {
+  background-color: vars.$opacityColor;
+  width: 300px;
+  height: 200px;
+  border-radius: 1.5em;
+  margin-bottom: calc(vars.$gutter * 2.5);
+  transition: all 1s;
+
+  &-name {
+    text-transform: uppercase;
+    color: vars.$lightColor;
+    padding: calc(vars.$gutter * 1.5) 0 calc(vars.$gutter * 3) 0;
+  }
+  &-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.cityCard:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* for tablet */
+@media (min-width: 576px) {
+  .cityCard {
+    width: 400px;
+  }
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+  .cityCard {
+    width: 500px;
+  }
+}
+
+
+/* for screen */
+@media (min-width: 1200px) {
+  .cityCard {
+    width: 600px;
+  }
+}
