@@ -7,8 +7,8 @@ import CityPage from '../CityPage/CityPage';
 function App() {
   return (
     <div className="app">
-      {/* <MainPage /> */}
-      <CityPage />
+      <MainPage />
+      {/* <CityPage /> */}
     </div>
   );
 };
